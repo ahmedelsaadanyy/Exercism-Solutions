@@ -1,0 +1,12 @@
+class EggCounter {
+int count(int number) {
+    String binary = number.toRadixString(2);
+    int count = 0;
+    for (int i = 0; i < binary.length; i++) {
+      if (binary[i] == '1') {
+        count++;
+      }
+    }
+    return count;
+  }
+}
